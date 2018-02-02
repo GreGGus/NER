@@ -34,3 +34,6 @@ print("ok")
 result = model.analyze(text.split())
 print(result)
 print("end")
+import json
+with open('result_ner.txt', 'w') as outfile:
+    json.dump(result, outfile)
